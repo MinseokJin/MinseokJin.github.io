@@ -153,3 +153,9 @@ a:hover {
     border-radius: 5px;
     background-color: #ecf0f1;
 }
+/* 밑줄 */
+.underline {
+    border-bottom: 2px solid #000; /* 선의 두께와 색상 설정 */
+    padding-bottom: 10px; /* 선과 텍스트 사이의 간격 설정 */
+    width: 100%; /* 선의 길이를 100%로 설정 */
+}
