@@ -52,9 +52,43 @@
 
         <h3>업적</h3>
         <p>인물의 주요 업적과 기여에 대한 설명이 여기에 들어갑니다.</p>
+        <h4>논란</h4>
+        <div class="collapsible">
+            <button class="collapsible-button">2022</button>
+            <div class="content">
+                <a href="controversies/2022.html">김경호/논란/2022</a>
+            </div>
+        </div>
+        <div class="collapsible">
+            <button class="collapsible-button">2023</button>
+            <div class="content">
+                <a href="controversies/2023.html">김경호/논란/2023</a>
+            </div>
+        </div>
+        <div class="collapsible">
+            <button class="collapsible-button">2024</button>
+            <div class="content">
+                <a href="controversies/2024.html">김경호/논란/2024</a>
+            </div>
+        </div>
 
+        <div class="message-box">
+            <h3>1997년 ~ 2002년</h3>
+            <p>김경호 자신이 가졌던 모든 보컬적 역량을 쏟아부었던 최전성기.<br>라고 할 수도 있다</p>
+        </div>
     </div>
+    
+    
 </div>
+
+<script>
+    document.querySelectorAll('.collapsible-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
 
 <footer class="footer">
     <p>&copy; 2024 KyeongHoWiki. All Rights Reserved.</p>

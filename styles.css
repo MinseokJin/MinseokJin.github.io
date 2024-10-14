@@ -75,7 +75,7 @@ header {
     background-color: #34495e;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -88,6 +88,30 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* 메시지 박스 */
+.message-box {
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: auto;
+    /*max-height: 200px;*/ /* 최대 높이 설정 */
+    overflow-y: auto; /* 세로 스크롤바 표시 */
+}
+
+.message-box h3 {
+    margin: 0 0 10px;
+    color: #34495e;
+}
+
+.message-box p {
+    margin: 0;
+    color: #2c3e50;
 }
 
 /* 반응형 디자인 */
@@ -104,4 +128,28 @@ a:hover {
     .main-content {
         margin-left: 0;
     }
+}
+
+/* 색인 */
+.collapsible {
+    margin: 20px 0;
+}
+
+.collapsible-button {
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    background-color: #ecf0f1;
 }
