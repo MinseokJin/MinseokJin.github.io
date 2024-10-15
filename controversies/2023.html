@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>김경호/논란/2023</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>경호 위키</h1>
+        </header>
+
+        <div class="container">
+            <div class="sidebar">
+                <h3>메뉴</h3>
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="#">문서</a></li>
+                    <li><a href="#">편집 역사</a></li>
+                    <li><a href="#">기여 목록</a></li>
+                    <li><a href="#">토론</a></li>
+                </ul>
+            </div>
+        <div class="main-content">
+            <h2>김경호/논란/2023</h2>
+            <div id = "index" class="index">
+                <h3>목차</h3>
+                <div class="index-item">
+                    <a href="#section1">1.</a><span>송대석 비하발언 및 사회적 통념비판 논란<br></span>
+                </div>
+                <div class="index-item">
+                    <a href="#section2">2.</a><span>살해시도 고백 논란<br></span>
+                </div>
+                <div class="index-item">
+                    <a href="#section3">3.</a> <span>치매 의혹</span><br>
+                </div>
+                <div class="index-item">
+                    <a href="#section4">4.</a> <span>근로자 비하 논란<br></span>
+                </div>
+            </div>
+            <div id="section1" class="section">
+                <a href="#index">1.</a><span>송대석 비하발언 및 사회적 통념비판 논란</span>
+            </div>
+            <div class="section-item">
+                <div class="message-box">
+                    <p>김경호: 나는 솔직한 사람은 꼭 좋은사람은 아니라고봐, 대석이를 봐 솔직하지만 좋은사람은 아니라니까?</p>
+                </div>
+                <p>2024.12.04 9시경 김경호의 디스코드에서의 발언으로 점화된 논란이다.<br></p>
+                <p>
+                    평소 다른 디스코드원의 비하발언을 서슴치 않던 인물이니만큼 원래대로라면 크게 논란이 될 만한 발언은 아니었으나, 문제는 사회적 통념까지 걸고 넘어진 것에 있다.<br>
+                    언뜻 보기에는 송대석에대한 비판처럼 보이나, 앞서말한 '솔직한 사람은 꼭 좋은 사람이 아니다'라는 발언이 문제가 된 것으로, 송대석에 대한 비하 뿐 아니라 솔직한<br>
+                    사람들에 대한 비하까지 행한 파렴치한 발언이라고 볼 수 있다.<br>
+                    이에 디스코드원들은(이하 누리꾼) '김경호의 인성을 다시 한 번 확인 할 수 있는 부분', '이제 뭐가 잘 못 됐는지도 모르겠다' 등 따가운 시선을 보냈다.
+                </p>
+            </div>
+            <div id="section2" class="section">
+                <a href="#index">2.</a><span>살해시도 고백 논란</span>
+            </div>
+            <div class="section-item">
+                <div class="message-box">
+                    <p>김경호: (요타님에게)내가 저 사람 바다에 밀어버렸는데 어떻게 살아돌아왔지?</p>
+                </div>
+            </div>
+            <div id="section3" class="section">
+                <a href="#index">3.</a><span>치매 의혹</span>
+            </div>
+            <div class="section-item">
+                <div class="message-box">
+                    <p>김경호: 재현이가 누구야?</p>
+                </div>
+            </div>
+            <div id="section4" class="section">
+                <a href="#index">4.</a><span>근로자 비하 논란</span>
+            </div>
+            <div class="section-item">
+                <div class="message-box">
+                    <img src="../images/근로자_비하.png" style="max-width:100%; height:auto;">
+                </div>
+            </div>
+            
+        </div>
+
+            <script>
+                document.querySelectorAll('.collapsible-button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const content = button.nextElementSibling;
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    });
+                });
+            </script>
+            
+            <footer class="footer">
+                <p>&copy; 2024 KyeongHoWiki. All Rights Reserved.</p>
+            </footer>
+            
+    </body>
+</html>

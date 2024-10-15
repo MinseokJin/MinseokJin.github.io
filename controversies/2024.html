@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>김경호/논란/2024</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+    <header>
+        <h1>경호 위키</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>메뉴</h3>
+            <ul>
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="#">문서</a></li>
+                <li><a href="#">편집 역사</a></li>
+                <li><a href="#">기여 목록</a></li>
+                <li><a href="#">토론</a></li>
+            </ul>
+        </div>
+        <script>
+            document.querySelectorAll('.collapsible-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        </script>
+        
+        <footer class="footer">
+            <p>&copy; 2024 KyeongHoWiki. All Rights Reserved.</p>
+        </footer>
+        
+    </body>
+</html>
