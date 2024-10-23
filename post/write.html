@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글쓰기</title>
+</head>
+<body>
+
+  <h1>글쓰기</h1>
+
+  <!-- 글쓰기 폼 -->
+  <form id="writeForm">
+    <label for="title">제목:</label>
+    <input type="text" id="title" name="title" required><br>
+
+    <label for="content">내용:</label><br>
+    <textarea id="content" name="content" rows="10" cols="50" required></textarea><br>
+
+    <button type="submit">글쓰기</button>
+  </form>
+
+  <script>
+    // 폼 제출 시 서버로 데이터 전송
+    document.getElementById('writeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
+
+      fetch('/write.html', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, content })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          window.location.href = '/'; // 저장 성공 시 목록으로 이동
+        } else {
+          alert('글쓰기에 실패했습니다.');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

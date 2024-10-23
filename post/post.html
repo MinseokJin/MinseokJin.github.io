@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 보기</title>
+</head>
+<body>
+
+  <h1 id="postTitle">게시글 제목</h1>
+  <p id="postContent">게시글 내용</p>
+  <p><strong>작성일:</strong> <span id="postDate"></span></p>
+  <button onclick="location.href='/'">목록으로 돌아가기</button>
+
+  <script>
+    const postId = window.location.pathname.split('/').pop();
+
+    // 서버에서 게시글 데이터 가져오기
+    fetch(`/post/${postId}`)
+      .then(response => response.json())
+      .then(post => {
+        document.getElementById('postTitle').textContent = post.title;
+        document.getElementById('postContent').textContent = post.content;
+        document.getElementById('postDate').textContent = new Date(post.createdAt).toLocaleString();
+      });
+  </script>
+
+</body>
+</html>
