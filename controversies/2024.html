@@ -8,34 +8,51 @@
     </head>
 
     <body>
+        <header>
+            <h1>경호 위키</h1>
+        </header>
 
-    <header>
-        <h1>경호 위키</h1>
-    </header>
+        <div class="container">
+            <div class="sidebar">
+                <h3>메뉴</h3>
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="#">문서</a></li>
+                    <li><a href="#">편집 역사</a></li>
+                    <li><a href="#">기여 목록</a></li>
+                    <li><a href="#">토론</a></li>
+                </ul>
+            </div>
 
-    <div class="container">
-        <div class="sidebar">
-            <h3>메뉴</h3>
-            <ul>
-                <li><a href="../index.html">홈</a></li>
-                <li><a href="#">문서</a></li>
-                <li><a href="#">편집 역사</a></li>
-                <li><a href="#">기여 목록</a></li>
-                <li><a href="#">토론</a></li>
-            </ul>
-        </div>
-        <script>
-            document.querySelectorAll('.collapsible-button').forEach(button => {
-                button.addEventListener('click', () => {
-                    const content = button.nextElementSibling;
-                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            <div class="main-content">
+                <h2>김경호/논란/2023</h2>
+                <div id = "index" class="index">
+                    <h3>목차</h3>
+                    <div class="index-item">
+                        <a href="#section1">1.</a><span><br></span>
+                    </div>
+                    <div class="index-item">
+                        <a href="#section2">2.</a><span><br></span>
+                    </div>
+                    <div class="index-item">
+                        <a href="#section3">3.</a><span></span><br>
+                    </div>
+                    <div class="index-item">
+                        <a href="#section4">4.</a><span><br></span>
+                    </div>
+            </div>
+            <script>
+                document.querySelectorAll('.collapsible-button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const content = button.nextElementSibling;
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    });
                 });
-            });
-        </script>
-        
-        <footer class="footer">
-            <p>&copy; 2024 KyeongHoWiki. All Rights Reserved.</p>
-        </footer>
+            </script>
+            
+            <footer class="footer">
+                <p>&copy; 2024 KyeongHoWiki. All Rights Reserved.</p>
+            </footer>
         
     </body>
 </html>
